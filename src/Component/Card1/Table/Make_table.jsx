@@ -1,6 +1,9 @@
 import { Link } from '@material-ui/icons'
-import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import '../Table/Table.css'
+import React from 'react'
+
 import {
   useTable,
   useResizeColumns,
@@ -18,7 +21,7 @@ const getStyles = (props, align = 'left') => [
     style: {
       justifyContent: align === 'right' ? 'flex-end' : 'flex-start',
       alignItems: 'flex-start',
-      display: 'flex',
+     display: 'flex',
     },
   },
 ]
@@ -51,6 +54,7 @@ function Table({ columns, data }) {
     }
   )
   return (
+    
     <div {...getTableProps()} className="table">
       <div>
         {headerGroups.map(headerGroup => (
@@ -71,7 +75,7 @@ function Table({ columns, data }) {
           </div>
         ))}
       </div>
-      <div {...getTableBodyProps()} className="tbody">
+      <div {...getTableBodyProps()} className="tbody table-striped table-hover table-responsive ">
         {rows.map((row, i) => {
           prepareRow(row)
           return (

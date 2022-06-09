@@ -1,7 +1,23 @@
 
 .th {
     background-color: aquamarine;
+     border: 1px solid blue;
+   
   }
 .tbody{
     background-color: aquamarine;
+    border: 1px solid blue;
+    
+   
+}
+.table{
+
+ background-color: azure;
+ 
+overflow-x:auto;
+ 
+}
+.td{
+  border: 1px solid red;
+  padding: auto;
 }
