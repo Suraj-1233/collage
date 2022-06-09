@@ -1,6 +1,6 @@
 import { Link } from '@material-ui/icons'
 import React from 'react'
-
+import '../Table/Table.css'
 import {
   useTable,
   useResizeColumns,
