@@ -1,0 +1,9 @@
+
+
+.app1{
+  background-size: 100% 100%;
+  background-image: url('./Component//Card1/image_header/slider-1-2.jpg');
+  /* background-repeat: no-repeat;  */
+  /* background-size: auto; */
+ min-height:100vh;
+}
