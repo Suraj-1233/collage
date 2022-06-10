@@ -58,9 +58,9 @@ function Table({ columns, data }) {
     }
   )
   return (
-    <div >
+    <div class="table-responsive">
        
-    <div {...getTableProps()} className="table">
+    <div {...getTableProps()} className=" table table-hover">
        
     
          

@@ -22,7 +22,7 @@ import String from './Component/Card1/Love/Love_data/String';
 import Backtraking from './Component/Card1/Love/Love_data/Backtraking';
 import Bst from './Component/Card1/Love/Love_data/Bst';
 import Trie from './Component/Card1/Love/Love_data/Trie';
-
+import Make_table3 from './Component/Card1/Table/Make_table3';
 
 function Bpp() {
 
@@ -38,7 +38,7 @@ function Bpp() {
         <Route path="/" element={<Card/>}> </Route>
        <Route path="/love_babber" element={<Lovea/>}></Route>
        <Route path="/Striver" element={<Striver1/>}></Route>
-         <Route path="/love_babber/Array" element={ <Make_table  data={Arry}/>}/> 
+         <Route path="/love_babber/Array" element={ <Make_table3   data={Arry}/>}/> 
          
          <Route path="/love_babber/LinkedList" element={ <Make_table  data={LinkedList}/>}/> 
          <Route path="/love_babber/Stack" element={ <Make_table  data={Stack}/>}/> 
