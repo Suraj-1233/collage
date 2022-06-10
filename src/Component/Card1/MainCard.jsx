@@ -12,25 +12,7 @@ import R from './Table/Make_table';
 function MainCard(props) {
 
   		
-  const columns = [
-    {
-      Header: 'NUMBER',
-      accessor: 'id'
-    }, {
-      Header: 'Queation',
-      accessor: 'title'
-
-    },
-	{
-		Header: 'Link',
-		accessor: 'link'
-		
-	  },
-      {
-      Header: 'HARDNESS',
-      accessor: 'hardness'
-    }
-  ]
+  
 
     
 

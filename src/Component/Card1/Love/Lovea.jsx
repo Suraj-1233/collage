@@ -19,11 +19,29 @@ function Lovea() {
         title="LinkedList"
         description=""
       />
+       <MainCard
+       img={Striver}
+        title="String"
+        description=""
+      />
+
+      <MainCard
+       img={Striver}
+        title="Backtraking"
+        description=""
+      />
+
 
       <MainCard
         img={Amazon}
        
         title="Stack"
+        description="I"
+      />
+      <MainCard
+        img={Amazon}
+       
+        title="dp"
         description="I"
       />
        <MainCard
@@ -66,6 +84,25 @@ function Lovea() {
         img={Amazon}
        
         title="Matrix"
+        description="I"
+      />
+      <MainCard
+        img={Amazon}
+       
+        title="Greedy"
+        description="I"
+      />
+
+     <MainCard
+        img={Amazon}
+       
+        title="Trie"
+        description="I"
+      />
+       <MainCard
+        img={Amazon}
+       
+        title="Bit"
         description="I"
       />
 

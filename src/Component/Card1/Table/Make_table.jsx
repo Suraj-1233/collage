@@ -1,8 +1,8 @@
-import { Link } from '@material-ui/icons'
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import { Link, Sort } from '@material-ui/icons'
+import  React ,{useState , useEffect} from 'react';
+
 import '../Table/Table.css'
-import React from 'react'
+
 
 import {
   useTable,
@@ -27,6 +27,9 @@ const getStyles = (props, align = 'left') => [
 ]
 
 function Table({ columns, data }) {
+  
+  
+
   const defaultColumn = React.useMemo(
     () => ({
       minWidth: 30,
@@ -45,6 +48,7 @@ function Table({ columns, data }) {
     {
       columns,
       data,
+      
       defaultColumn,
     },
     useResizeColumns,
@@ -54,8 +58,12 @@ function Table({ columns, data }) {
     }
   )
   return (
-    
+    <div >
+       
     <div {...getTableProps()} className="table">
+       
+    
+         
       <div>
         {headerGroups.map(headerGroup => (
           <div
@@ -93,6 +101,7 @@ function Table({ columns, data }) {
         })}
       </div>
     </div>
+    </div>
   )
 }
 function Make_table(props) {
@@ -106,7 +115,7 @@ function Make_table(props) {
     }, {
       Header: 'TITLE',
       accessor: 'title'
-
+      
     },
 	{
 		Header: 'Link',
@@ -114,14 +123,20 @@ function Make_table(props) {
 		
 	  },
       {
-      Header: 'HARDNESS',
-      accessor: 'hardness'
+      Header: 'Difficulty-Level',
+      accessor: 'hardness',
+      sort:true
     }
   ]
   return (
-   
+   <div>
+     
       <Table columns={columns} data={props.data} />
+
+   </div>
+
+     
    
   )
 }
-export default Make_table
+export default Make_table;

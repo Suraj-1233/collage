@@ -1,23 +1,28 @@
 
+
 .th {
-    background-color: aquamarine;
-     border: 1px solid blue;
+    background-color: rgb(42, 87, 72);
    
   }
 .tbody{
-    background-color: aquamarine;
-    border: 1px solid blue;
-    
+ 
+  
    
 }
 .table{
 
  background-color: azure;
- 
-overflow-x:auto;
+
+
+
+
  
 }
 .td{
   border: 1px solid red;
   padding: auto;
+  font-size: 16px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
+
