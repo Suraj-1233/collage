@@ -4,7 +4,7 @@ const  Arry = [
 {
     id: 1,
     title: "Reverse the array",
-   
+   color:false,
    
     link:"https://practice.geeksforgeeks.org/problems/reverse-an-array/0",
     hardness:"School" 
@@ -15,7 +15,7 @@ const  Arry = [
     id: 2,
     title: "Find minimum and maximum element in an array",
    
-   
+   color:false,
     link:"https://practice.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1",
     hardness:"Basic" 
   },
@@ -23,7 +23,7 @@ const  Arry = [
   {
     id: 3,
     title: "Kth smallest element",
-   
+   color:false,
    
     link:"https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
     hardness:"Medium" 
@@ -33,7 +33,7 @@ const  Arry = [
     id: 4,
     title: "Sort an array of 0s, 1s and 2s",
    
-   
+   color:false,
     link:"https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
     hardness:"Easy" 
   },
@@ -42,7 +42,7 @@ const  Arry = [
     id: 5,
     title: "Move all negative elements to end",
    
-   
+   color:false,
     link:"https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1",
     hardness:"Easy" 
   },
@@ -52,7 +52,7 @@ const  Arry = [
     id: 6,
     title: "Union of two arrays ",
    
-   
+   color:false,
     link:"https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1",
     hardness:"Basic " 
   },
@@ -60,7 +60,7 @@ const  Arry = [
   {
     id: 7,
     title: "Cyclically rotate an array by one",
-   
+   color:false,
    
     link:"https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1",
     hardness:"Basic" 
