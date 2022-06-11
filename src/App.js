@@ -4,7 +4,7 @@ import Card from './Component/Card1/Card';
 
 import './App.css'
 import { Route, Router } from 'react-router-dom';
- import R from './Component/Card1/Routers/Router_l'
+
 function App() {
 
  

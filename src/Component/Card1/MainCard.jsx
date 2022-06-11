@@ -1,4 +1,4 @@
-import { ReportOutlined } from "@material-ui/icons";
+
 import React from "react";
 import { ReactDOM } from "react";
 import Datastr from "./Data_str/Datastr";
@@ -8,7 +8,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import R from './Table/Make_table';
+
 function MainCard(props) {
 
   		

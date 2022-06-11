@@ -1,4 +1,4 @@
-import { Link, Search, Sort } from '@material-ui/icons'
+
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import '../Table/Table3.css';
@@ -117,7 +117,7 @@ function Make_table3(props) {
   
       <form action="">
     <input type="search" placeholder="Search here ..." value={value} onChange={filterData}></input>
-    <Search  className='fa'> </Search> 
+    {/* <Search  className='fa'> </Search>  */}
         
     </form>      
      
@@ -176,8 +176,11 @@ function Make_table3(props) {
 
                   <td>
                     {
+                      
+                      
 
-                      <button type="button" class="btn btn-success btnm" id={data.id} onClick={btn1}>Success</button>
+                      <button type="button" class="btn btn-success btnm" id={data.id} onClick={btn1}>Success </button>
+
                     }
 
                   </td>

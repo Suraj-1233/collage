@@ -7,12 +7,16 @@ import Bpp from './Bpp'
 import { BrowserRouter } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
 
 
 ReactDOM.render(
   <BrowserRouter>
+  
+   
 <Bpp></Bpp>
+
   </BrowserRouter>,
  
   document.getElementById('root')
