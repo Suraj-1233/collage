@@ -4,15 +4,15 @@ import Card from './Component/Card1/Card';
 
 import './App.css'
 import { Route, Router } from 'react-router-dom';
-
+import Local_storage from './Local_storage';
 function App() {
 
  
   return (
     
     <div  className='app1' >
-       <Card></Card> 
-     {/* <R title='love_babber'></R> */}
+    <Local_storage></Local_storage>
+     
      
     
    </div>

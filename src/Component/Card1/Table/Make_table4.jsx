@@ -6,14 +6,17 @@ import '../Table/Table3.css';
 
 
 
-function Make_table3(props) {
-
+function Make_table4(props) {
+   
+// console.log(props)
   const [value, setValue] = useState("");
   const [dataSource, setDataSource] = useState(props.data);
   const [tableFilter, setTableFilter] = useState([]);
   const [order, setOrder] = useState("ASC");
   const[sortime,setSorttime]=useState(0);
   const [dataSource1, setDataSource1] = useState(dataSource);
+ 
+//   console.log(dataSource)
   const sorting = (e) => {
    
     if (order === "ASC") {
@@ -83,7 +86,8 @@ function Make_table3(props) {
 
   };
   
-
+//   console.log(dataSource);
+//   console.log(" kya hua bhai");
 
   const filterData = (e) => {
     if (e.target.value !== "") {
@@ -104,26 +108,33 @@ function Make_table3(props) {
   const btn1 = (e) => {
     // console.log(e);S
     // console.log(e.target);
-    // console.log(e.target.id);
+    console.log(e.target.id);
     //alert(e.target.id)
 
     let newArr = [...dataSource]; // copying the old datas array
     
-
+console.log(newArr)
     for (let i = 0; i < newArr.length; i++) {
     
       if (newArr[i].id == e.target.id && newArr[i].color) {
         newArr[i].color = false;
-
+        console.log(newArr[i])
       }
-      if (newArr[i].id == e.target.id && newArr[i].color == false) {
+      else if(newArr[i].id == e.target.id && newArr[i].color == false) {
         newArr[i].color = true;
 
       }
     }
 
-    setDataSource(newArr);
+  
+    window.localStorage.setItem("love",JSON.stringify(newArr));
+    // console.log(window.localStorage.getItem("love"));
+    // console.log(props.name);
+    var retrievedData = localStorage.getItem("love");
+newArr = JSON.parse(retrievedData);
 
+    setDataSource(newArr);
+    console.log(dataSource)
     
 
   }
@@ -152,6 +163,7 @@ function Make_table3(props) {
 
           <thead >
             <tr>
+              
               <th scope="col">ID</th>
               <th scope="col">Title</th>
 
@@ -239,4 +251,4 @@ function Make_table3(props) {
 
 
 };
-export default Make_table3;
+export default Make_table4;

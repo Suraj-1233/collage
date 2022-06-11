@@ -324,14 +324,14 @@ const  Arry = [
     title: "Minimum no. of operations required to make an array palindrome",
    
     color:false,
-   
+    hardness:"Medium" ,
     link:"https://app.glider.ai/practice/problem/basic-programming/make-array-palindrome/problem",
      
   },
   {
     id: 36,
     title: "Find the median ",
-   
+    hardness:"Medium" ,
     color:false,
    
     link:"https://practice.geeksforgeeks.org/problems/find-the-median0527/1",
@@ -342,7 +342,7 @@ const  Arry = [
     id: 37,
     title: "Find the median ",
     color:false,
-   
+    hardness:"Medium" ,
    
     link:"https://practice.geeksforgeeks.org/problems/find-the-median0527/1",
      
@@ -351,7 +351,7 @@ const  Arry = [
     id: 38,
     title: "Median of two sorted arrays of different sizes",
     color:false,
-   
+    hardness:"Medium" ,
    
     link:"https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/",
      
