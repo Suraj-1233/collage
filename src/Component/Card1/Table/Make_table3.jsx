@@ -11,6 +11,55 @@ function Make_table3(props) {
   const [value, setValue] = useState("");
   const [dataSource, setDataSource] = useState(props.data);
   const [tableFilter, setTableFilter] = useState([]);
+  const [order,setOrder]=useState("ASC");
+  const sorting=(e) =>{
+    console.log(e);
+    if(order==="ASC")
+    {
+    
+      const sorted=[...dataSource].sort((a,b)=>
+      {
+        if(a.hardness> b.hardness)
+        {  
+         
+          return 1;
+
+
+        }
+        else{
+          return -1;
+        }
+      }
+
+      );
+      setDataSource(sorted);
+    
+      setOrder("DSC");
+    }
+
+   else if(order==="DSC")
+    {
+     
+      const sorted=[...dataSource].sort((a,b)=>
+      {
+      if(a.hardness> b.hardness)
+        {  
+          
+          return 1;
+
+
+        }
+        else
+          return -1;
+        
+      });
+     
+      setDataSource(sorted);
+      setOrder("ASC");
+    }
+   
+
+  };
   
 
   const filterData = (e) => {
@@ -36,11 +85,13 @@ function Make_table3(props) {
     //alert(e.target.id)
    
     let newArr = [...dataSource]; // copying the old datas array
-    console.log(newArr)
+    console.log(e.target.id)
+    console.log(e.target);
+    
     if(newArr[e.target.id - 1].color == true)
     {
     newArr[e.target.id - 1].color=false;
-   
+    
     }
     else
     {
@@ -71,15 +122,19 @@ function Make_table3(props) {
     </form>      
      
 
-
+   <div className='box1'>
       <table class="table  table-bordered" >
 
         <thead >
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
+         
+            <th scope="col"    onClick={()=>sorting()} > Difficulty    </th>
+          
 
-            <th scope="col">Difficulty</th>
+        
+           
             <th scope='col'>Status</th>
           </tr>
         </thead>
@@ -137,6 +192,7 @@ function Make_table3(props) {
         </tbody>
 
       </table>
+      </div>
 
     </div>
 
