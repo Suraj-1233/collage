@@ -116,7 +116,7 @@ function Make_table3(props) {
         newArr[i].color = false;
 
       }
-      if (newArr[i].id == e.target.id && newArr[i].color == false) {
+       else if (newArr[i].id == e.target.id && newArr[i].color == false) {
         newArr[i].color = true;
 
       }

@@ -8,9 +8,9 @@ import '../Table/Table3.css';
 
 function Make_table4(props) {
    
-// console.log(props)
+ 
   const [value, setValue] = useState("");
-  const [dataSource, setDataSource] = useState(props.data);
+  const [dataSource, setDataSource] = useState(JSON.parse(localStorage.getItem(props.name)));
   const [tableFilter, setTableFilter] = useState([]);
   const [order, setOrder] = useState("ASC");
   const[sortime,setSorttime]=useState(0);
@@ -127,14 +127,14 @@ console.log(newArr)
     }
 
   
-    window.localStorage.setItem("love",JSON.stringify(newArr));
+    window.localStorage.setItem(props.name,JSON.stringify(newArr));
     // console.log(window.localStorage.getItem("love"));
-    // console.log(props.name);
-    var retrievedData = localStorage.getItem("love");
+    console.log(props.name);
+    var retrievedData = localStorage.getItem(props.name);
 newArr = JSON.parse(retrievedData);
 
     setDataSource(newArr);
-    console.log(dataSource)
+  
     
 
   }
