@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+
 import '../Table/Table3.css';
 
 
@@ -14,7 +14,7 @@ function Make_table4(props) {
   const [tableFilter, setTableFilter] = useState([]);
   const [order, setOrder] = useState("ASC");
   const[sortime,setSorttime]=useState(0);
-  const [dataSource1, setDataSource1] = useState(dataSource);
+  const [dataSource1] = useState(dataSource);
  
 //   console.log(dataSource)
   const sorting = (e) => {
@@ -103,7 +103,6 @@ function Make_table4(props) {
     }
   }
 
-  const [color, setColor] = useState("");
 
   const btn1 = (e) => {
     // console.log(e);S
@@ -116,11 +115,11 @@ function Make_table4(props) {
 console.log(newArr)
     for (let i = 0; i < newArr.length; i++) {
     
-      if (newArr[i].id == e.target.id && newArr[i].color) {
+      if (newArr[i].id === e.target.id && newArr[i].color) {
         newArr[i].color = false;
         console.log(newArr[i])
       }
-      else if(newArr[i].id == e.target.id && newArr[i].color == false) {
+      else if(newArr[i].id === e.target.id && newArr[i].color === false) {
         newArr[i].color = true;
 
       }
@@ -176,12 +175,12 @@ newArr = JSON.parse(retrievedData);
             </tr>
           </thead>
           <tbody>
-            {value.length > 0 ? tableFilter.map((data, index) => {
+            {value.length > 0 ? tableFilter.map((data) => {
               return (
                 <tr className='bt' style={{ backgroundColor: data.color ? 'green' : '#DBD4CF' }}>
 
                   <td className='td'>{data.id}</td>
-                  <td className='td' ><a href={data.link} target='_blank'>{data.title} </a></td>
+                  <td className='td' ><a href={data.link}  rel="noopener">{data.title} </a></td>
 
 
 
@@ -205,7 +204,7 @@ newArr = JSON.parse(retrievedData);
                   <tr className='bt' style={{ backgroundColor: data.color ? 'green' : '#DBD4CF' }}>
 
                     <td>{data.id}</td>
-                    <td><a href={data.link} target='_blank'>{data.title} </a></td>
+                    <td><a href={data.link}  rel="noopener">{data.title} </a></td>
 
 
 
